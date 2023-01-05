@@ -34,6 +34,7 @@ public class PlaylistTests {
         assertThat(responsePlaylist1.getName(), equalTo(requestPlaylist1.getName()));
         assertThat(responsePlaylist1.getDescription(), equalTo(requestPlaylist1.getDescription()));
         assertThat(responsePlaylist1.get_public(), equalTo(requestPlaylist1.get_public()));
+
     }
 
     @Step("Status code assertation result")
