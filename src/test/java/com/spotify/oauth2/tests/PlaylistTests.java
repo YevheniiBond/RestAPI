@@ -89,4 +89,3 @@ public class PlaylistTests {
         assertError(response.as(Error.class), 401, "Invalid access token");
     }
 }
-
