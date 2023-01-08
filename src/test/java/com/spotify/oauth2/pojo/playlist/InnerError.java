@@ -1,4 +1,4 @@
-package com.spotify.oauth2.pojo;
+package com.spotify.oauth2.pojo.playlist;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

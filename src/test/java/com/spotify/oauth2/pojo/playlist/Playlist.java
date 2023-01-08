@@ -1,5 +1,5 @@
 
-package com.spotify.oauth2.pojo;
+package com.spotify.oauth2.pojo.playlist;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.spotify.oauth2.api.applicationApi;
 
 import com.spotify.oauth2.api.RestResource;
-import com.spotify.oauth2.pojo.Playlist1;
+import com.spotify.oauth2.pojo.playlist.Playlist1;
 import com.spotify.oauth2.utils.ConfigLoader;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;

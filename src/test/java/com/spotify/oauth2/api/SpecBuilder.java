@@ -20,7 +20,7 @@ public class SpecBuilder {
                 build();
     }
 
-    public static ResponseSpecification getResponseSpec(){
+    public static ResponseSpecification  getResponseSpec(){
         return new ResponseSpecBuilder().
         log(LogDetail.ALL).
                 build();

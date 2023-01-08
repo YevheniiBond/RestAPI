@@ -1,12 +1,12 @@
 package com.spotify.oauth2.api;
 
+import com.spotify.oauth2.pojo.track.Album;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
 
-import static com.spotify.oauth2.api.Route.API;
-import static com.spotify.oauth2.api.Route.TOKEN;
+import static com.spotify.oauth2.api.Route.*;
 import static com.spotify.oauth2.api.SpecBuilder.getRequestSpec;
 import static com.spotify.oauth2.api.SpecBuilder.getResponseSpec;
 import static io.restassured.RestAssured.given;
@@ -31,6 +31,17 @@ public class RestResource {
                 formParams(formParams).
                 log().all().
                 when().post(API+TOKEN).
+                then().spec(getResponseSpec()).
+                extract().
+                response();
+    }
+    public static  Response postTrack(String path, String token, Album requestTrack){
+        return given(getRequestSpec()).
+                body(requestTrack).
+                queryParam("uris","spotify:track:7mP4bBFQgt6B3sJfqkIzt2").
+                header("Authorization","Bearer " + token).
+                contentType(ContentType.URLENC).
+                when().post(PLAYLISTS+"/"+"3uaTSr9fC3nyvnM9KDFrZt"+ TRACKS).
                 then().spec(getResponseSpec()).
                 extract().
                 response();

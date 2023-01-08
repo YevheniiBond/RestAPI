@@ -1,8 +1,8 @@
 package com.spotify.oauth2.tests;
 
 import com.spotify.oauth2.api.applicationApi.PlaylistApi;
-import com.spotify.oauth2.pojo.Error;
-import com.spotify.oauth2.pojo.Playlist1;
+import com.spotify.oauth2.pojo.playlist.Error;
+import com.spotify.oauth2.pojo.playlist.Playlist1;
 import com.spotify.oauth2.utils.DataLoader;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
